@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punjab Band - Professional Wedding Band Services | Balongi, Mohali, Punjab</title>
+    <meta name="description" content="Premier Punjabi wedding band service with brass bands, decorative raths, giddha dance, and full wedding arrangements in Punjab.">
+    <meta name="keywords" content="Punjabi band, wedding band, indian wedding, dhol band, ghodi service, rath decoration, mohali wedding services">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎺</text></svg>">
+    
+    <style>
+        :root {
+            --red: #C21807;
+            --gold: #FFD700;
+            --gold-light: #ffea80;
+            --white: #FFFFFF;
+            --black: #1a1a1a;
+            --gray: #f5f5f5;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--black);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--red);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--red);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn:hover {
+            background: #a81406;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(194, 24, 7, 0.3);
+        }
+        
+        .btn-gold {
+            background: var(--gold);
+            color: var(--black);
+        }
+        
+        .btn-gold:hover {
+            background: #e6c200;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+            font-size: 2.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--gold);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            font-size: 2rem;
+            margin-right: 10px;
+            color: var(--red);
+        }
+        
+        .logo-text {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--red);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 1rem;
+            position: relative;
+        }
+        
+        nav ul li a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--red);
+            transition: var(--transition);
+        }
+        
+        nav ul li a:hover {
+            color: var(--red);
+        }
+        
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        
+        .sticky-book {
+            position: fixed;
+            top: 10px;
+            right: 100px;
+            z-index: 999;
+            transition: var(--transition);
+        }
+        
+        /* Special Offer Banner */
+        .offer-banner {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--gold);
+            color: var(--black);
+            padding: 12px 0;
+            text-align: center;
+            z-index: 1100;
+            font-weight: 600;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.2);
+        }
+        
+        .offer-banner .close-offer {
+            position: absolute;
+            right: 20px;
+            cursor: pointer;
+            font-size: 1.4rem;
+        }
+        
+        .offer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .offer-tag {
+            background: var(--red);
+            color: var(--white);
+            padding: 5px 12px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .offer-tag i {
+            font-size: 1rem;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 700px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(194, 24, 7, 0.8), rgba(0, 0, 0, 0.7));
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero-title {
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .hero-tagline {
+            font-size: 2.2rem;
+            color: var(--gold);
+            margin: 30px 0;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        
+        .hero-special {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-top: 40px;
+            backdrop-filter: blur(5px);
+            border: 2px solid var(--gold);
+            display: inline-block;
+            max-width: 600px;
+        }
+        
+        .hero-special h3 {
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        
+        .hero-special p {
+            font-size: 1.1rem;
+        }
+        
+        /* About Section */
+        .about {
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-img {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-text h3 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--gray);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .services-pattern {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C21807' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            height: 120px;
+            background-color: var(--red);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--gold);
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            background-color: var(--white);
+        }
+        
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 20px;
+            margin: 5px;
+            background: var(--gray);
+            border: none;
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--red);
+            color: var(--white);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .gallery-item {
+            height: 250px;
+            overflow: hidden;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: var(--shadow);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* Team Section */
+        .team {
+            background-color: var(--red);
+            background-image: linear-gradient(135deg, var(--red) 0%, #a81406 100%);
+            color: var(--white);
+        }
+        
+        .team .section-title {
+            color: var(--gold);
+        }
+        
+        .team .section-title:after {
+            background: var(--gold);
+        }
+        
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+        
+        .team-member {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            margin-bottom: 20px;
+        }
+        
+        .team-member h4 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+        
+        .special-info {
+            background: var(--gold);
+            color: var(--black);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .special-info:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at top left, transparent 15%, rgba(194,24,7,0.2) 15.1%),
+                radial-gradient(circle at bottom right, transparent 15%, rgba(194,24,7,0.2) 15.1%);
+            pointer-events: none;
+        }
+        
+        .special-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .special-info h2:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background: var(--red);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .special-info p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background-color: var(--gray);
+        }
+        
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: var(--black);
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .contact-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        
+        .contact-form {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Map Section */
+        .map-section {
+            padding: 0;
+            height: 500px;
+        }
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--black);
+            color: var(--white);
+            padding: 70px 0 30px;
+            position: relative;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-col h4 {
+            color: var(--gold);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            position: relative;
+        }
+        
+        .footer-col h4:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background: var(--gold);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: #ddd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--gold);
+            transform: translateY(-5px);
+            color: var(--black);
+        }
+        
+        .credits {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        
+        .credits a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+        
+        /* Floating Buttons */
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            z-index: 999;
+        }
+        
+        .whatsapp-btn, .call-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            box-shadow: var(--shadow);
+            font-size: 1.8rem;
+            transition: var(--transition);
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .call-btn {
+            background: var(--red);
+        }
+        
+        .whatsapp-btn:hover, .call-btn:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Responsive Styles */
+        @media screen and (max-width: 992px) {
+            .hero-title {
+                font-size: 3.8rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: var(--transition);
+            }
+            
+            nav.active {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 20px 0;
+            }
+            
+            nav ul li {
+                margin: 0;
+            }
+            
+            nav ul li a {
+                display: block;
+                padding: 12px 20px;
+            }
+            
+            .sticky-book {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+            
+            .offer-content {
+                flex-direction: column;
+                gap: 8px;
+                padding: 0 40px;
+            }
+            
+            .special-info h2 {
+                font-size: 2rem;
+            }
+            
+            .special-info p {
+                font-size: 1.2rem;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-special h3 {
+                font-size: 1.5rem;
+            }
+            
+            .hero-special {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Special Offer Banner -->
+    <div class="offer-banner">
+        <div class="offer-content">
+            <div class="offer-tag">
+                <i class="fas fa-tag"></i> Exclusive Offer!
+            </div>
+            <div>Special discounts available during festive seasons</div>
+            <div>Serving proudly since 1986 - Chandigarh's No.1 Band</div>
+            <div class="close-offer">&times;</div>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/9872939823" class="whatsapp-btn" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="tel:7814749816" class="call-btn">
+            <i class="fas fa-phone"></i>
+        </a>
+    </div>
+
+    <!-- Sticky Book Button -->
+    <div class="sticky-book">
+        <a href="#booking" class="btn btn-gold">Book Now</a>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">🎺</div>
+                <div class="logo-text">Punjab Band</div>
+            </a>
+            
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Video Background -->
+        <video autoplay loop muted class="hero-video">
+            <source src="https://assets.mixkit.co/videos/preview/mixkit-a-wedding-ceremony-with-the-bride-and-groom-4148-large.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        
+        <div class="container hero-content">
+            <h1 class="hero-title">Punjab Band</h1>
+            <p class="hero-subtitle">Professional Indian Wedding Band Service | Balongi, Mohali, Punjab</p>
+            <div class="hero-tagline">"Your Celebration, Our Rhythm!"</div>
+            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="#booking" class="btn btn-gold">Book Now</a>
+            
+            <div class="hero-special">
+                <h3>Special Offer!</h3>
+                <p>Exclusive discounts available during festive seasons</p>
+                <p>Serving proudly since 1986 - Chandigarh's No.1 Band</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='450' viewBox='0 0 600 450'%3E%3Crect width='600' height='450' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='24' text-anchor='middle' fill='%23808080'%3EBrass Band with Traditional Punjabi Attire%3C/text%3E%3C/svg%3E" alt="Punjab Band Performing">
+                </div>
+                <div class="about-text">
+                    <h3>Celebrating Punjabi Tradition Since 1986</h3>
+                    <p>Welcome to Punjab Band, the premier wedding band service in Balongi, Mohali. We bring the vibrant energy and rich cultural heritage of Punjab to your special celebrations. With our skilled performers, traditional music, and professional arrangements, we ensure your wedding becomes a memorable celebration for everyone.</p>
+                    <p>Rooted in Punjabi traditions since 1986, our team brings decades of expertise to create unforgettable wedding experiences. As Chandigarh's No.1 Band, we take pride in preserving our cultural heritage while adding modern touches that appeal to all generations.</p>
+                    <p>Based near Dashmesh Market in Balongi, Mohali, we serve weddings across Punjab and neighboring states. Our comprehensive services cover everything from the bridegroom's entry to the final ceremonies, ensuring a seamless celebration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Brass Band</h3>
+                        <p>Professional musicians in smart uniforms performing traditional and modern wedding tunes to energize your celebrations.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-horse"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Wedding Horse (Ghodi)</h3>
+                        <p>Beautifully decorated white horse for the bridegroom's procession adorned with traditional Punjabi ornaments.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-church"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Decorative Rath</h3>
+                        <p>Exquisitely decorated carriage with fresh flowers and lights for a royal entry during wedding ceremonies.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Vintage Car</h3>
+                        <p>Classic vintage car for an elegant entry that adds a touch of nostalgia to your special day.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Crystal Chhattar</h3>
+                        <p>Ornamental canopy with sparkling crystals for a grand entry during night functions and special ceremonies.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drum"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Dhol & Foji Band</h3>
+                        <p>Authentic Punjabi Dhol players and military-style bands for energetic performances that create festive atmosphere.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Jaago Dhol</h3>
+                        <p>Traditional Punjabi Jaago performance with dhol and lights for the pre-wedding festivities.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Giddha Performers</h3>
+                        <p>Professional Malwai Giddha dancers in colorful attire to entertain your guests with Punjabi folk dances.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-archway"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Victoria Rath</h3>
+                        <p>Royal Victorian-style carriage decorated with fresh flowers for a majestic wedding procession.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Well-Dressed Performers</h3>
+                        <p>Professional artists in traditional Punjabi attire to enhance the visual splendor of your wedding.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Power Generators</h3>
+                        <p>Uninterrupted power supply solutions to ensure your wedding festivities continue without any interruption.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Catering Services</h3>
+                        <p>Traditional Punjabi catering with a variety of menu options to satisfy your guests' palates.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Special Offer Section -->
+            <div class="special-info">
+                <h2>Special Festive Offer</h2>
+                <p>Get exclusive discounts on all services during wedding season!</p>
+                <a href="#booking" class="btn">Book Special Offer Now</a>
+            </div>
+        </div>
+        <div class="services-pattern"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-filter">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Weddings</button>
+                <button class="filter-btn">Band Performances</button>
+                <button class="filter-btn">Rath Decorations</button>
+                <button class="filter-btn">Dance Performances</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0c1bb'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EWedding Band Performing%3C/text%3E%3C/svg%3E" alt="Band Performance">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0e7bb'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EDecorated Wedding Horse (Ghodi)%3C/text%3E%3C/svg%3E" alt="Decorated Ghodi">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23bbf0dd'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EColorful Rath Decorated%3C/text%3E%3C/svg%3E" alt="Colorful Rath">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23c7bbf0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EMalwai Giddha Performance%3C/text%3E%3C/svg%3E" alt="Giddha Dance">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0bbef'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EVictoria Rath Decoration%3C/text%3E%3C/svg%3E" alt="Victoria Rath">
+                </div>
+                <div class="gallery-item">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23bbd7f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3ECrystal Chhattar at Night%3C/text%3E%3C/svg%3E" alt="Crystal Chhattar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Our Expert Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='12' text-anchor='middle' fill='%23808080'%3EMr. Girdhari Lal%3C/text%3E%3C/svg%3E" alt="Girdhari Lal">
+                    <h4>Mr. Girdhari Lal</h4>
+                    <p>Co-Founder & Band Director</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='12' text-anchor='middle' fill='%23808080'%3EMr. Paramjeet Singh%3C/text%3E%3C/svg%3E" alt="Paramjeet Singh">
+                    <h4>Mr. Paramjeet Singh</h4>
+                    <p>Co-Founder & Operations Head</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='12' text-anchor='middle' fill='%23808080'%3EShivam Wallu%3C/text%3E%3C/svg%3E" alt="Shivam Wallu">
+                    <h4>Shivam Wallu</h4>
+                    <p>Marketing & Client Relations</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='12' text-anchor='middle' fill='%23808080'%3EHarry Brar%3C/text%3E%3C/svg%3E" alt="Harry Brar">
+                    <h4>Harry Brar</h4>
+                    <p>Performance Coordinator</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Ccircle cx='60' cy='60' r='60' fill='%23e0e0e0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='12' text-anchor='middle' fill='%23808080'%3ESahil Wallu%3C/text%3E%3C/svg%3E" alt="Sahil Wallu">
+                    <h4>Sahil Wallu</h4>
+                    <p>Decoration Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title">Book Our Services</h2>
+            <div class="contact-form" style="max-width: 800px; margin: 0 auto;">
+                <form id="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="event-date">Event Date *</label>
+                        <input type="date" id="event-date" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Services Required *</label>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;">
+                            <div>
+                                <input type="checkbox" id="brass-band" value="Brass Band">
+                                <label for="brass-band">Brass Band</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="ghodi" value="Wedding Horse (Ghodi)">
+                                <label for="ghodi">Wedding Horse (Ghodi)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rath" value="Decorative Rath">
+                                <label for="rath">Decorative Rath</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="vintage-car" value="Vintage Car">
+                                <label for="vintage-car">Vintage Car</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="crystal-chhattar" value="Crystal Chhattar">
+                                <label for="crystal-chhattar">Crystal Chhattar</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="foji-band" value="Foji Band">
+                                <label for="foji-band">Foji Band</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="dhol" value="Punjabi Dhol">
+                                <label for="dhol">Punjabi Dhol</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="jaago-dhol" value="Jaago Dhol">
+                                <label for="jaago-dhol">Jaago Dhol</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="giddha" value="Malwai Giddha">
+                                <label for="giddha">Malwai Giddha</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="victoria" value="Victoria Rath">
+                                <label for="victoria">Victoria Rath</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="power" value="Power Generators">
+                                <label for="power">Power Generators</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="catering" value="Catering">
+                                <label for="catering">Catering Services</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" class="form-control"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="checkbox" id="special-offer" checked>
+                        <label for="special-offer">Apply Special Festive Discount (Available for dates during festive seasons)</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-gold">Submit Booking Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-wrapper">
+                <div>
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Reach out to us for booking inquiries, custom packages, or any questions about our services. We'd love to be part of your special celebration!</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Numbers</h4>
+                            <p>+91 7814749816</p>
+                            <p>+91 9872939823</p>
+                            <p>+91 7986254282</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>er.shivamwallu@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Balongi, Mohali (Near Dashmesh Market), Punjab</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Everyday: 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="contact-form">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="c-name">Name *</label>
+                                <input type="text" id="c-name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="c-phone">Phone *</label>
+                                <input type="tel" id="c-phone" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="c-email">Email</label>
+                                <input type="email" id="c-email" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="c-subject">Subject</label>
+                                <input type="text" id="c-subject" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="c-message">Message *</label>
+                                <textarea id="c-message" class="form-control" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13710.19413211933!2d76.69640011511059!3d30.750587250000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390feb56e3f0a68f%3A0xef8afef0c2ba2bd1!2sDashmesh%20Market%2C%20Balongi%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1687941927891!5m2!1sen!2sin" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4>Punjab Band</h4>
+                    <p>Bringing the vibrant traditions and rhythmic celebrations of Punjab to your wedding ceremonies with professionalism and cultural authenticity.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Brass Band</a></li>
+                        <li><a href="#">Wedding Horse (Ghodi)</a></li>
+                        <li><a href="#">Decorated Rath</a></li>
+                        <li><a href="#">Vintage Car</a></li>
+                        <li><a href="#">Punjabi Dhol</a></li>
+                        <li><a href="#">Giddha Performers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> Balongi, Mohali, Punjab</li>
+                        <li><i class="fas fa-phone"></i> +91 7814749816</li>
+                        <li><i class="fas fa-envelope"></i> er.shivamwallu@gmail.com</li>
+                        <li><i class="fas fa-clock"></i> Everyday: 9AM - 9PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="credits">
+                <p>Created by <a href="mailto:er.shivamwallu@gmail.com">Shivam Wallu</a> | &copy; 2023 Punjab Band. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        const mobileToggle = document.querySelector('.mobile-toggle');
+        const navMenu = document.querySelector('nav');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                navMenu.classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 100);
+        });
+        
+        // Gallery filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                // Filter gallery items
+                const filter = btn.textContent.toLowerCase();
+                
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.querySelector('img').alt.toLowerCase().includes(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Form submission
+        const bookingForm = document.getElementById('booking-form');
+        if (bookingForm) {
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here we would normally send the form data to a server
+                // For now, we'll show a success message
+                alert('Thank you! Your booking request has been submitted. We will contact you shortly to confirm the details.');
+                
+                // Reset the form
+                bookingForm.reset();
+            });
+        }
+        
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Here we would normally send the form data to a server
+                // For now, we'll show a success message
+                alert('Thank you for your message! We will get back to you shortly.');
+                
+                // Reset the form
+                contactForm.reset();
+            });
+        }
+        
+        // Close offer banner
+        const closeOffer = document.querySelector('.close-offer');
+        if (closeOffer) {
+            closeOffer.addEventListener('click', () => {
+                document.querySelector('.offer-banner').style.display = 'none';
+            });
+        }
+        
+        // Initialize the map
+        function initMap() {
+            // Google Maps API is loaded via the iframe embed for simplicity
+            // For a fully custom map implementation, we would use the Maps JavaScript API
+        }
+        
+        // Initialize functions when page has loaded
+        window.addEventListener('DOMContentLoaded', () => {
+            initMap();
+        });
+    </script>
+</body>
+</html>
