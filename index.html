@@ -938,26 +938,39 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Video Background -->
-        <video autoplay loop muted class="hero-video">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-a-wedding-ceremony-with-the-bride-and-groom-4148-large.mp4" type="video/mp4">
-        </video>
-        <div class="video-overlay"></div>
-        
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('{{ url_for('static', filename='images/hero-slide-1.jpg') }}');"></div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-2.jpg') }}');"></div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-3.jpg') }}');"></div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-4.jpg') }}');"></div>
+            <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-5.jpg') }}');"></div>
+        </div>
+        <div class="overlay"></div> <!-- Changed class name for clarity -->
         <div class="container hero-content">
             <h1 class="hero-title">Punjab Band</h1>
-            <p class="hero-subtitle">Professional Indian Wedding Band Service | Balongi, Mohali, Punjab</p>
+            <p class="hero-subtitle">Professional Indian Wedding Band Service | Serving All Over Punjab & India</p> <!-- Slightly updated subtitle -->
             <div class="hero-tagline">"Your Celebration, Our Rhythm!"</div>
-            <a href="#contact" class="btn">Get In Touch</a>
-            <a href="#booking" class="btn btn-gold">Book Now</a>
+            <a href="{{ url_for('contact') }}" class="btn">Get In Touch</a>
+            <a href="{{ url_for('booking') }}" class="btn btn-gold">Book Now</a>
             
             <div class="hero-special">
-                <h3>Special Offer!</h3>
-                <p>Exclusive discounts available during festive seasons</p>
+                <h3>Special Festive Offer!</h3>
+                <p>Exclusive discounts up to 20% during wedding season</p> <!-- Made it more enticing -->
                 <p>Serving proudly since 1986 - Chandigarh's No.1 Band</p>
             </div>
         </div>
+        
+        <!-- Optional: Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </section>
+
+
 
     <!-- About Section -->
     <section id="about" class="about">

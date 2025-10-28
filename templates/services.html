@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}Our Services - Punjab Band{% endblock %}
+
+{% block content %}
+<!-- H1 Heading for SEO -->
+<h1 class="page-title">Our Wedding Services</h1>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/brass-band-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-music"></i>
+                        Brass Band
+                    </h3>
+                    <p>Professional musicians in smart uniforms performing traditional and modern wedding tunes to energize your celebrations.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/ghodi-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-horse"></i>
+                        Wedding Horse (Ghodi)
+                    </h3>
+                    <p>Beautifully decorated white horse for the bridegroom's procession adorned with traditional Punjabi ornaments.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/rath-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-church"></i>
+                        Decorative Rath
+                    </h3>
+                    <p>Exquisitely decorated carriage with fresh flowers and lights for a royal entry during wedding ceremonies.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/vintage-car-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-car"></i>
+                        Vintage Car
+                    </h3>
+                    <p>Classic vintage car for an elegant entry that adds a touch of nostalgia to your special day.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/crystal-chhattar-bg.webp') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-lightbulb"></i>
+                        Crystal Chhattar
+                    </h3>
+                    <p>Ornamental canopy with sparkling crystals for a grand entry during night functions and special ceremonies.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/dhol-foji-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-drum"></i>
+                        Dhol & Foji Band
+                    </h3>
+                    <p>Authentic Punjabi Dhol players and military-style bands for energetic performances that create festive atmosphere.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/jaago-dhol-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-fire"></i>
+                        Jaago Dhol
+                    </h3>
+                    <p>Traditional Punjabi Jaago performance with dhol and lights for the pre-wedding festivities.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/giddha-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-tshirt"></i>
+                        Giddha Performers
+                    </h3>
+                    <p>Professional Malwai Giddha dancers in colorful attire to entertain your guests with Punjabi folk dances.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/victoria-rath-bg.webp') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-archway"></i>
+                        Victoria Rath
+                    </h3>
+                    <p>Royal Victorian-style carriage decorated with fresh flowers for a majestic wedding procession.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/performers-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-users"></i>
+                        Well-Dressed Performers
+                    </h3>
+                    <p>Professional artists in traditional Punjabi attire to enhance the visual splendor of your wedding.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/power-generators-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-plug"></i>
+                        Power Generators
+                    </h3>
+                    <p>Uninterrupted power supply solutions to ensure your wedding festivities continue without any interruption.</p>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon" style="background-image: url('{{ url_for('static', filename='images/catering-bg.jpg') }}');"></div>
+                <div class="service-content">
+                    <h3 class="service-heading">
+                        <i class="fas fa-utensils"></i>
+                        Catering Services
+                    </h3>
+                    <p>Traditional Punjabi catering with a variety of menu options to satisfy your guests' palates.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Special Offer Section -->
+        <div class="special-info">
+            <h2>Special Festive Offer</h2>
+            <p>Get exclusive discounts on all services during wedding season!</p>
+            <a href="{{ url_for('booking') }}" class="btn">Book Special Offer Now</a>
+        </div>
+    </div>
+    <div class="services-pattern"></div>
+</section>
+{% endblock %}

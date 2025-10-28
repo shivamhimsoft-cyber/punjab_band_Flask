@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Gallery - Punjab Band{% endblock %}
+
+{% block content %}
+<!-- H1 Heading for SEO -->
+<h1 class="page-title">Our Gallery</h1>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery">
+    <div class="container">
+        <h2 class="section-title">Our Gallery</h2>
+        <div class="gallery-filter">
+            <button class="filter-btn active">All</button>
+            <button class="filter-btn">Weddings</button>
+            <button class="filter-btn">Band Performances</button>
+            <button class="filter-btn">Rath Decorations</button>
+            <button class="filter-btn">Dance Performances</button>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0c1bb'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EWedding Band Performing%3C/text%3E%3C/svg%3E" alt="Band Performance">
+            </div>
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0e7bb'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EDecorated Wedding Horse (Ghodi)%3C/text%3E%3C/svg%3E" alt="Decorated Ghodi">
+            </div>
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23bbf0dd'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EColorful Rath Decorated%3C/text%3E%3C/svg%3E" alt="Colorful Rath">
+            </div>
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23c7bbf0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EMalwai Giddha Performance%3C/text%3E%3C/svg%3E" alt="Giddha Dance">
+            </div>
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f0bbef'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3EVictoria Rath Decoration%3C/text%3E%3C/svg%3E" alt="Victoria Rath">
+            </div>
+            <div class="gallery-item">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23bbd7f0'/%3E%3Ctext x='50%25' y='50%25' font-family='Arial' font-size='20' text-anchor='middle' fill='%23C21807'%3ECrystal Chhattar at Night%3C/text%3E%3C/svg%3E" alt="Crystal Chhattar">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

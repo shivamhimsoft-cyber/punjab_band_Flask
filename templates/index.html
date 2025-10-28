@@ -5,7 +5,6 @@
 
 {% block content %}
 <!-- Hero Section -->
-<!-- Hero Section with Image Slider -->
 <section id="home" class="hero">
     <div class="hero-slider">
         <div class="slide active" style="background-image: url('{{ url_for('static', filename='images/hero-slide-1.jpg') }}');"></div>
@@ -14,18 +13,26 @@
         <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-4.jpg') }}');"></div>
         <div class="slide" style="background-image: url('{{ url_for('static', filename='images/hero-slide-5.jpg') }}');"></div>
     </div>
-    <div class="video-overlay"></div>  <!-- Reuse overlay for image dimming -->
+    <div class="video-overlay"></div>
     <div class="container hero-content">
         <h1 class="hero-title">Punjab Band</h1>
         <p class="hero-subtitle">Professional Indian Wedding Band Service | Serving All Over India</p>
         <div class="hero-tagline">"Your Celebration, Our Rhythm!"</div>
-        <a href="#contact" class="btn">Get In Touch</a>
-        <a href="#booking" class="btn btn-gold">Book Now</a>
+        <a href="{{ url_for('contact') }}" class="btn">Get In Touch</a>
+        <a href="{{ url_for('booking') }}" class="btn btn-gold">Book Now</a>
         <div class="hero-special">
             <h3>Special Offer!</h3>
             <p>Exclusive discounts available during festive seasons</p>
             <p>Serving proudly since 1986 - Chandigarh's No.1 Band</p>
         </div>
+    </div>
+    <!-- Slider Dots -->
+    <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
     </div>
 </section>
 

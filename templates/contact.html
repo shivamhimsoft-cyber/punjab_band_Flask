@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - Punjab Band{% endblock %}
+
+{% block content %}
+<!-- H1 Heading for SEO -->
+<h1 class="page-title">Get In Touch With Us</h1>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-wrapper">
+            <div>
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Reach out to us for booking inquiries, custom packages, or any questions about our services. We'd love to be part of your special celebration!</p>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone Numbers</h4>
+                        <p>+91 7814749816</p>
+                        <p>+91 9872939823</p>
+                        <p>+91 7986254282</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>er.shivamwallu@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Balongi, Mohali (Near Dashmesh Market), Punjab</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Working Hours</h4>
+                        <p>Everyday: 9:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    <form id="contact-form" method="POST" action="{{ url_for('contact') }}">
+                        <div class="form-group">
+                            <label for="c-name">Name *</label>
+                            <input type="text" id="c-name" name="c-name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="c-phone">Phone *</label>
+                            <input type="tel" id="c-phone" name="c-phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="c-email">Email</label>
+                            <input type="email" id="c-email" name="c-email" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="c-subject">Subject</label>
+                            <input type="text" id="c-subject" name="c-subject" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="c-message">Message *</label>
+                            <textarea id="c-message" name="c-message" class="form-control" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
