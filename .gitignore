@@ -4,3 +4,4 @@ instance/
 *.pyc
 static/images/*.svg  # If placeholders
 node_modules/  # If Tailwind/Bootstrap build
+credentials.json

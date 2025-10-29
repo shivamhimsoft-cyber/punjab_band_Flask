@@ -4,8 +4,6 @@
 
 {% block content %}
 <!-- H1 Heading for SEO -->
-<h1 class="page-title">Book Our Services</h1>
-
 <!-- Booking Section -->
 <section id="booking" class="booking">
     <div class="container">
@@ -23,77 +21,107 @@
                 </div>
                 
                 <div class="form-group">
-                    <label>Services Required *</label>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;">
-                        <div>
-                            <input type="checkbox" id="brass-band" name="services" value="Brass Band">
-                            <label for="brass-band">Brass Band</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="ghodi" name="services" value="Wedding Horse (Ghodi)">
-                            <label for="ghodi">Wedding Horse (Ghodi)</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="rath" name="services" value="Decorative Rath">
-                            <label for="rath">Decorative Rath</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="vintage-car" name="services" value="Vintage Car">
-                            <label for="vintage-car">Vintage Car</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="crystal-chhattar" name="services" value="Crystal Chhattar">
-                            <label for="crystal-chhattar">Crystal Chhattar</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="foji-band" name="services" value="Foji Band">
-                            <label for="foji-band">Foji Band</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="dhol" name="services" value="Punjabi Dhol">
-                            <label for="dhol">Punjabi Dhol</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="jaago-dhol" name="services" value="Jaago Dhol">
-                            <label for="jaago-dhol">Jaago Dhol</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="giddha" name="services" value="Malwai Giddha">
-                            <label for="giddha">Malwai Giddha</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="victoria" name="services" value="Victoria Rath">
-                            <label for="victoria">Victoria Rath</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="power" name="services" value="Power Generators">
-                            <label for="power">Power Generators</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="catering" name="services" value="Catering">
-                            <label for="catering">Catering Services</label>
-                        </div>
+                    <label>Services Required * <small>(All pre-selected; customize as needed)</small></label>
+                    <div class="services-grid">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="band-masters" name="services" value="11 Professional Band Masters" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-users"></i> 11 Professional Band Masters
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="brass-band" name="services" value="Brass Band" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-music"></i> Brass Band
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="ghodi" name="services" value="Wedding Horse (Ghodi)" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-horse-head"></i> Wedding Horse (Ghodi)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="rath" name="services" value="Decorative Rath" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-car-side"></i> Decorative Rath
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="crystal-chhattar" name="services" value="Crystal Chhattar" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-gem"></i> Crystal Chhattar
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="dhol" name="services" value="Punjabi Dhol" checked>
+                            <span class="checkmark"></span>
+                            <i class="fas fa-drum"></i> Punjabi Dhol
+                        </label>
                     </div>
+                    <small class="form-text text-muted">Our packages include expert coordination—uncheck to customize.</small>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number *</label>
-                    <input type="tel" id="phone" name="phone" class="form-control" required>
+                    <label>Optional Add-ons (Confirm via Call)</label>
+                    <div class="services-grid optional">
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="vintage-car" name="optional_services" value="Vintage Car">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-car"></i> Vintage Car
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="foji-band" name="optional_services" value="Foji Band">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-music"></i> Foji Band
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="jaago-dhol" name="optional_services" value="Jaago Dhol">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-drum"></i> Jaago Dhol (Jaago only)
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="giddha" name="optional_services" value="Malwai Giddha">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-dancing"></i> Malwai Giddha
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="power" name="optional_services" value="Power Generators">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-bolt"></i> Power Generators
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="catering" name="optional_services" value="Catering Services">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-utensils"></i> Catering Services
+                        </label>
+                        <label class="checkbox-item">
+                            <input type="checkbox" id="victoria" name="optional_services" value="Victoria Rath">
+                            <span class="checkmark"></span>
+                            <i class="fas fa-car"></i> Victoria Rath
+                        </label>
+                    </div>
+                    <small class="form-text text-muted">Premium upgrades—tailored during your consultation.</small>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-control">
+                    <label for="phone">Primary Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required placeholder="e.g., +91 7814749816">
+                </div>
+                
+                <div class="form-group">
+                    <label for="alternate-phone">Alternate Phone Number *</label>
+                    <input type="tel" id="alternate-phone" name="alternate_phone" class="form-control" required placeholder="e.g., +91 9872939823">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email (Optional)</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com">
                 </div>
                 
                 <div class="form-group">
                     <label for="message">Additional Message</label>
-                    <textarea id="message" name="message" class="form-control"></textarea>
+                    <textarea id="message" name="message" class="form-control" rows="3" placeholder="Quick notes? We'll perfect the details together."></textarea>
                 </div>
                 
                 <div class="form-group">
                     <input type="checkbox" id="special-offer" checked>
-                    <label for="special-offer">Apply Special Festive Discount (Available for dates during festive seasons)</label>
+                    <label for="special-offer">Apply Special Festive Discount</label>
                 </div>
                 
                 <button type="submit" class="btn btn-gold">Submit Booking Request</button>
@@ -101,4 +129,76 @@
         </div>
     </div>
 </section>
+
+<!-- Success Modal for Booking Confirmation -->
+<div id="bookingSuccessModal" class="offer-modal" style="display: none;">
+    <div class="offer-modal-content" style="background: linear-gradient(135deg, var(--white) 0%, var(--gray) 100%); text-align: center; padding: 40px;">
+        <span class="close-modal" style="color: var(--gold); font-size: 1.8rem; cursor: pointer; position: absolute; top: 15px; right: 20px;">&times;</span>
+        <h3 style="color: var(--gold); font-size: 2rem; margin-bottom: 15px;"><i class="fas fa-check-circle"></i> Booking Confirmed!</h3>
+        <p style="color: var(--black); font-size: 1.1rem; line-height: 1.6; margin-bottom: 20px;">
+            Thank you for choosing Punjab Band. Your request has been successfully submitted.
+        </p>
+        <p style="color: var(--red); font-weight: 600; font-size: 1rem; margin-bottom: 25px;">
+            One of our representatives will reach out to you within 5-10 minutes to confirm details and finalize your booking.
+        </p>
+        <button onclick="closeBookingModal()" class="btn btn-gold" style="margin-top: 0;">Got it, Thank You!</button>
+    </div>
+</div>
 {% endblock %}
+
+<script>
+// Close Booking Success Modal
+function closeBookingModal() {
+    const modal = document.getElementById('bookingSuccessModal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Updated Form Submission for Booking - Fixed to Show Modal and Clear Form
+document.addEventListener('DOMContentLoaded', () => {
+    const bookingForm = document.getElementById('booking-form');
+    if (bookingForm) {
+        bookingForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(bookingForm);
+            try {
+                const response = await fetch(bookingForm.action || '/booking', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json(); // Parse JSON response
+                if (response.ok && data.success) {
+                    // Show success modal
+                    const modal = document.getElementById('bookingSuccessModal');
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden';
+                    // Clear form fields
+                    bookingForm.reset();
+                } else {
+                    alert(data.message || 'Oops! Something went wrong. Please try again.');
+                }
+            } catch (error) {
+                console.error('Form error:', error);
+                alert('Network issue. Please check your connection.');
+            }
+        });
+    }
+
+    // Close success modal handlers
+    const successClose = document.querySelector('#bookingSuccessModal .close-modal');
+    if (successClose) {
+        successClose.addEventListener('click', closeBookingModal);
+    }
+
+    const successModal = document.getElementById('bookingSuccessModal');
+    if (successModal) {
+        successModal.addEventListener('click', (e) => {
+            if (e.target === successModal) {
+                closeBookingModal();
+            }
+        });
+    }
+});
+</script>

@@ -56,30 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Form Submissions with AJAX (No page reload, better UX)
-    const bookingForm = document.getElementById('booking-form');
-    if (bookingForm) {
-        bookingForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(bookingForm);
-            try {
-                const response = await fetch(bookingForm.action || '/booking', {
-                    method: 'POST',
-                    body: formData
-                });
-                if (response.ok) {
-                    alert('Thank you! Your booking request has been submitted. We will contact you shortly.');
-                    bookingForm.reset();
-                } else {
-                    alert('Oops! Something went wrong. Please try again.');
-                }
-            } catch (error) {
-                console.error('Form error:', error);
-                alert('Network issue. Please check your connection.');
-            }
-        });
-    }
-
+    // Form Submissions with AJAX (No page reload, better UX) - Contact Form Only (Booking handled in template)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', async (e) => {
@@ -103,7 +80,65 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close Offer Banner (Manual + Auto-hide after 5s)
+    // Exclusive Offer Popup - Show on first visit only
+    const offerModal = document.getElementById('offerModal');
+    const closeModal = document.querySelector('.close-modal');
+    const bookNowBtn = offerModal ? offerModal.querySelector('.btn-gold') : null;
+    const hasSeenOffer = localStorage.getItem('hasSeenOffer');
+
+    if (offerModal && !hasSeenOffer) {
+        // Show popup after a short delay for better UX
+        setTimeout(() => {
+            offerModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling while open
+        }, 1000); // 1 second delay after page load
+    }
+
+    // Close popup handlers
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            closeOfferModal();
+        });
+    }
+
+    if (offerModal) {
+        offerModal.addEventListener('click', (e) => {
+            if (e.target === offerModal) {
+                closeOfferModal();
+            }
+        });
+    }
+
+    // Handle "Book Now & Save" button - Set localStorage before navigation
+    if (bookNowBtn) {
+        bookNowBtn.addEventListener('click', (e) => {
+            // Set localStorage immediately to prevent popup from showing again
+            localStorage.setItem('hasSeenOffer', 'true');
+            // Close modal before navigation
+            closeOfferModal();
+        });
+    }
+
+    function closeOfferModal() {
+        if (offerModal) {
+            offerModal.style.opacity = '0';
+            setTimeout(() => {
+                offerModal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }, 300);
+            // Ensure localStorage is set on close
+            localStorage.setItem('hasSeenOffer', 'true');
+        }
+    }
+
+    // Optional: Close on ESC key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && offerModal && offerModal.style.display === 'flex') {
+            closeOfferModal();
+        }
+    });
+
+    // Close Offer Banner (Manual + Auto-hide after 5s) - Fallback if needed
     const closeOffer = document.querySelector('.close-offer');
     const offerBanner = document.querySelector('.offer-banner');
     if (closeOffer) {
@@ -113,11 +148,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     if (offerBanner) {
-        // Auto-hide after 5 seconds
-        setTimeout(() => {
-            offerBanner.style.opacity = '0';
-            setTimeout(() => { offerBanner.style.display = 'none'; }, 300);
-        }, 5000);
+        // Auto-hide after 5 seconds - Only if popup not shown
+        if (hasSeenOffer) {
+            setTimeout(() => {
+                offerBanner.style.opacity = '0';
+                setTimeout(() => { offerBanner.style.display = 'none'; }, 300);
+            }, 5000);
+        }
     }
 
     // Fade-in on Scroll (Professional Animation for Sections)
